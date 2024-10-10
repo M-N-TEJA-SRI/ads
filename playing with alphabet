@@ -1,0 +1,25 @@
+find the smallest character greater than the target if not found print disappointed
+#include <iostream>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+		int n,k;
+		cin>>n>>k;
+		int a[n],i,c=0,sum=0;
+		for(i=0;i<n;i++){
+			cin>>a[i];
+			if(sum+a[i]<=k){
+			c++;
+			sum+=a[i];
+			}
+		}
+		cout<<c<<endl;
+	}
+}
+output
+1
+2 c
+a b
+disappointed
